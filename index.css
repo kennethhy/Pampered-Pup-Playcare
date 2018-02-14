@@ -1,203 +1,319 @@
-ul.nav li a, ul.nav li a:visited {
-    color: black !important;
-}
 
-ul.nav li a:hover, ul.nav li a:active {
-    color: black !important;
-}
+@media all and (min-width:12em){
 
-ul.nav li.active a {
-    color: black !important;
-}
-
-@media all and (min-width:200px){
- 
-    .navbar-custom {
-        background-color: red;
-        color: white;
-        height: 400px;
-    }
-    /* change the brand and text color */
-    .navbar-custom .navbar-brand,
-    .navbar-custom .navbar-text {
-        color: white;
-    }
-    /* change the link color */
-    .navbar-custom .navbar-nav .nav-link {
-        color: white;
-    }
-    /* change the color of active or hovered links */
-    .navbar-custom .nav-item.active .nav-link,
-    .navbar-custom .nav-item:hover .nav-link {
-        color:white;
-    }
-}
-.icon-bar{
-    color:black;
-    background-color: black;
-}
-.footer{
-    background-color: red;
-    position: relative;
-    top: 70px;
-}  
-
-
-@media all and (min-width: 400px){
-
-    .navbar-custom {
-        background-color: red;
-        color:white;
-        height: 200px;
-    }
-    /* change the brand and text color */
-    .navbar-custom .navbar-brand,
-    .navbar-custom .navbar-text {
-        color: white;
-    }
-    /* change the link color */
-    .navbar-custom .navbar-nav .nav-link {
-        color: white;
-    }
-    /* change the color of active or hovered links */
-    .navbar-custom .nav-item.active .nav-link,
-    .navbar-custom .nav-item:hover .nav-link {
-        color:white;
-    }
-}
-.icon-bar{
-    color:black;
-    background-color: black;
-}
-.footer{
-    background-color: red;
-    color:black;
-    position: relative;
-    top: 50px;
-}  
-nav a{
-   color:black; 
-}
-    nav a:hover{
-        color:white;
-    }
-
-  
-@media all and (min-width:700px){
-
-    .navbar-custom {
-        background-color: red;
-        color: white;
-        height: 250px;
-    }
-    /* change the brand and text color */
-    .navbar-custom .navbar-brand,
-    .navbar-custom .navbar-text {
-        color: white;
-    }
-    /* change the link color */
-    .navbar-custom .navbar-nav .nav-link {
-        color: white;
-    }
-    /* change the color of active or hovered links */
-    .navbar-custom .nav-item.active .nav-link,
-    .navbar-custom .nav-item:hover .nav-link {
-        color:white;
-    }
-}
-.icon-bar{
-    color:black;
-    background-color: black;
-}
-.footer{
-    background-color: red;
-    position: relative;
-    color: black;
-    top: 50px;
-}  
-.home-pictures{
-    position: relative;
-    top: 50px;
-}
-.chat{
-    position: relative;
-    top: -10px;
-}
-@media all and (min-width: 1200px){
- 
-
-
-    .sidebar{
-        margin: 0px;
-        padding: 0px;
-        border: solid black 1px;
-        width: 10px; 
-        height:500px;
+    .custom-carousel{
         position: relative;
-       left: 100px;
-       
+        top: 3em;
+        width: 20em;
+        height: 20em;
+
+   }
+   .mini-pictures{
+       position: relative;
+       top: 15em;
+   }
+   .services{
+       position:relative;
+       top: 10em;
+   }
+   .sidebar-home{
+       position: relative;
+       top: 5em;
+   }
+   .footer{
+       position: relative;
+       top: 10em;
+   }
+   .servicesFooter{
+       position: relative;
+       top: 10em;
+       left: -3em;
+   }
+   .about-us-pic{
+       position: relative;
+       top: 8em;
+   }
+   .aboutUs{
+       position: relative;
+       top: 10em;
+   }
+   .sidebar-aboutUs{
+       position: relative;
+       top: 10em;
+   }
+   .sidebar-services{
+    margin: 0px;
+    padding: 0px;
+    height:25em;
+    position: relative;
+    top: 10em;
+   left:2em;
+}  
+.playcare-pic{
+position: relative;
+top: 8em;
+}
+.playcare{
+    position: relative;
+    top: 10em;
+}
+.sidebar-playcare{
+    position: relative;
+    top: 10em;
+}
+.boarding-pic{
+    position:relative;
+    top: 7em;
+}
+.sidebar-boarding{
+    position:relative;
+    top:7em;
+}
+.boarding{
+    position:relative;
+    top:7em;
+}
+.grooming-pic{
+    position:relative;
+    top: 7em;
+}
+.grooming{
+    position: relative;
+    top: 10em;
+}
+.sidebar-grooming{
+    position:relative;
+    top: 10em;
+}
+.form1{
+    position: relative;
+    top: 7em;
+}
+.sidebar-contactUs{
+    position: relative;
+    top: 10em;
+}
+    }
+
+@media all and (min-width: 31em){
+    .custom-breadcrum{
+        position: relative;
+        top: 2em;
+    }
+    .custom-carousel{
+        position: relative;
+        top: 3em;
+        width: 20em;
+        height: 20em;
+
+   }
+   .boarding{
+       position: relative;
+       top: 12em;
+       left: 1em;
+   }
+ .boarding-pic{
+     position: relative;
+     top: 12em;
+     left: 1em;
+ }
+ .sidebar-boarding{
+     position: relative;
+     top: 12em;
+ }
+ .footer{
+     position: relative;
+     top: 15em;
+ }
+
+}
+
+@media all and (min-width:43em){
+    .custom-breadcrum{
+        position: relative;
+        top: 5em;
+    }
+    .custom-carousel{
+        position: relative;
+        top: 3em;
+        width: 20em;
+        height: 20em;
+
+   }
+   .sidebar-home{
+    margin: 0px;
+    padding: 0px;
+    height:28em;
+    position: relative;
+    top: 5em;
+   left:-0.5em;
+   
+}
+.boarding{
+    position: relative;
+    top: 12em;
+    left: 1em;
+}
+.boarding-pic{
+  position: relative;
+  top: 12em;
+  left: -18em;
+}
+.sidebar-boarding{
+  position: relative;
+  top: 4em;
+  left: 10em;
+}
+.footer{
+  position: relative;
+  top: 15em;
+}
+   
+}
+@media all and (min-width: 75em){
+    .custom-breadcrum{
+        position: relative;
+        top: 2em;
+        
+
+    }
+    .mini-pictures{
+        position:relative;
+        top: 10em;
+    }
+    .nav-link{
+        color: black;
+        
+    }
+    .breadcrum-services{
+        position: relative;
+        top: 3em;
+        
+    }
+    .services{
+        position: relative;
+        top: 5em;
+    }
+    .custom-carousel{
+     width: 50em;
+     height: 30em;
+    }
+    .about-us-pic{
+        position:relative;
+        top:5em;
+    }
+    .aboutUs{
+        position: relative;
+        top: 5em;
     }
    
-    
-    .box{
-        border: 1px solid black;
-       position: relative;
-       top: -50px;
-       
-       }
-      
-      
-      
-    
-       .button{
-           position: relative;
-           top: -25px;
-           left: 60px;
-       }
-       .directions{
+    .playcare-pic{
         position: relative;
-        left: 20px;
-       }
-       .address{
-           position: relative;
-           top: 20%;
-           left:100px;
-       }
-       
-    .copyright{
-        position: relative;
-       top: -30px;
-        left: 500px;
+        top: 3em;
     }
-    /* change the background color */
-.navbar-custom {
-    background-color: red;
-    color: white;
-    height: 100px;
+    .sidebar-services{
+        margin: 0px;
+        padding: 0px;
+        border: solid black 0.10em;
+        height:25em;
+        position: relative;
+        top: -40em;
+       left:40em;
+    }  
+    .sidebar-home{
+        margin: 0px;
+        padding: 0px;
+        border: solid black 0.10em; 
+        height:28em;
+        position: relative;
+        top: -37em;
+       left:55em;
+       
+    }
+    .servicesFooter{
+        position: relative;
+        top: 30em;
+        left: -15em;
+    }
+    .sidebar-aboutUs{
+        margin: 0px;
+        padding: 0px;
+        border: solid black 0.10em; 
+        height:25em;
+        width: 10em;
+        position: relative;
+        top: -37em;
+       left:50em;
+       
+    }
+    .sidebar-playcare{
+        margin: 0px;
+        padding: 0px;
+        border: solid black 0.10em; 
+        height:25em;
+        width: 5em;
+        position: relative;
+        top: -50em;
+       left:40em;
+    }
+    .sidebar-boarding{
+        margin: 0px;
+        padding: 0px;
+        border: solid black 0.10em;
+        height:25em;
+        position: relative;
+        top: -5em;
+       left:20em;
+    } 
+
+    .grooming{
+        position: relative;
+        top:5em ;
+    }
+    .sidebar-grooming{
+        margin: 0px;
+        padding: 0px;
+        border: solid black 0.10em; 
+        height:25em;
+        width: 5em;
+        position: relative;
+        top: -30em;
+       left:40em;
+    }
+    .grooming-pic{
+        position: relative;
+        top: 5em;
+    }
+    .boarding{
+position: relative;
+top: 10em;
+    }
+    .boarding-pic{
+        position: relative;
+        top: 8em;
+        left: -17em;
+    }
+.playcare{
+position: relative;
+top: 5em;
 }
-/* change the brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: white;
+.form1{
+    position: relative;
+    top: 5em;
 }
-/* change the link color */
-.navbar-custom .navbar-nav .nav-link {
-    color: white;
-}
-/* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color:white;
+.sidebar-contactUs{
+    margin: 0px;
+    padding: 0px;
+    border: solid black 0.10em; 
+    height:25em;
+    width: 10em;
+    position: relative;
+    top: -35em;
+   left:40em;
 }
 .footer{
-    background-color: red;
-    position: relative;
-    color:black;
-    top: 100px;
-} 
-.main-pictures{
-position: relative;
-left: 40px;
-} 
-
+    position:relative;
+    top: 30em;
+    left: 1em;
+}
 }
