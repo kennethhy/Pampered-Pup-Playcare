@@ -1,5 +1,5 @@
 
-@media all and (min-width:200px){
+@media all and (min-width:13em){
 
     .custom-carousel{
         position: relative;
@@ -95,7 +95,7 @@ top: 8em;
 }
     }
 
-@media all and (min-width:500px){
+@media all and (min-width:32em){
     .custom-breadcrum{
         position: relative;
         top: 2em;
@@ -128,7 +128,7 @@ top: 8em;
 
 }
 
-@media all and (min-width:700px){
+@media all and (min-width: 44em){
     .custom-breadcrum{
         position: relative;
         top: 5em;
@@ -170,7 +170,7 @@ top: 8em;
 }
    
 }
-@media all and (min-width: 1200px){
+@media all and (min-width: 75em){
     .custom-breadcrum{
         position: relative;
         top: 2em;
