@@ -10,7 +10,7 @@
    }
    .mini-pictures{
        position: relative;
-       top: 15em;
+       top: 3em;
    }
    .services{
        position:relative;
@@ -19,10 +19,14 @@
    .sidebar-home{
        position: relative;
        top: 5em;
+	   
    }
    .footer{
        position: relative;
        top: 10em;
+	   padding-top: 1em;
+	   padding-bottom: 1em;
+	   background-color: lightgrey;
    }
    .servicesFooter{
        position: relative;
@@ -93,6 +97,10 @@ top: 8em;
     position: relative;
     top: 10em;
 }
+.info-body {
+		position: relative;
+		padding: 0px;
+	}
     }
 
 @media all and (min-width: 31em){
@@ -105,8 +113,16 @@ top: 8em;
         top: 3em;
         width: 20em;
         height: 20em;
-
    }
+      .sidebar-home{
+		margin: 0px;
+		padding: 1em;
+		position: relative;   
+   }
+   .mini-pictures{
+        position:relative;
+        top: 3em;
+    }
    .boarding{
        position: relative;
        top: 12em;
@@ -124,7 +140,14 @@ top: 8em;
  .footer{
      position: relative;
      top: 15em;
+	 padding-top: 1em;
+	 padding-bottom: 1em;
+	 background-color: lightgrey;
  }
+ .info-body {
+		position: relative;
+		padding: 0px;
+	}
 
 }
 
@@ -142,13 +165,13 @@ top: 8em;
    }
    .sidebar-home{
     margin: 0px;
-    padding: 0px;
-    height:28em;
+    padding: 1em;
     position: relative;
-    top: 5em;
-   left:-0.5em;
-   
-}
+   }
+   .mini-pictures{
+        position:relative;
+        top: 3em;
+    }
 .boarding{
     position: relative;
     top: 12em;
@@ -167,19 +190,24 @@ top: 8em;
 .footer{
   position: relative;
   top: 15em;
+  padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: lightgrey;
 }
+.info-body {
+		position: relative;
+		padding: 0px;
+	}
    
 }
 @media all and (min-width: 75em){
     .custom-breadcrum{
         position: relative;
         top: 2em;
-        
-
     }
     .mini-pictures{
         position:relative;
-        top: 10em;
+        top: 3em;
     }
     .nav-link{
         color: black;
@@ -222,13 +250,10 @@ top: 8em;
     }  
     .sidebar-home{
         margin: 0px;
-        padding: 0px;
+        padding-bottom: 1em;
         border: solid black 0.10em; 
-        height:28em;
         position: relative;
-        top: -37em;
-       left:55em;
-       
+             
     }
     .servicesFooter{
         position: relative;
@@ -294,8 +319,8 @@ top: 10em;
         left: -17em;
     }
 .playcare{
-position: relative;
-top: 5em;
+     position: relative;
+     top: 5em;
 }
 .form1{
     position: relative;
@@ -313,7 +338,14 @@ top: 5em;
 }
 .footer{
     position:relative;
-    top: 30em;
-    left: 1em;
+    top: 5em;
+   
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: lightgrey;
 }
+.info-body {
+		position: relative;
+		padding: 5em;
+	}
 }
