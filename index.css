@@ -20,30 +20,20 @@
         background-color: black;
         color: white;
     }
-    .custom-carousel{
-        position: relative;
-        top: 3em;
-        width: 20em;
-        height: 20em;
-
-   }
+    
    .mini-pictures{
        position: relative;
        top: 5em;
    }
    .playcare{
-		position: relative;
-		top: 10em;
-	}
-	.playcare-pic{
-		position: relative;
-		top: 8em;
+    position: relative;
+    top: 10em;
+}
+.playcare-pic{
+    position: relative;
+    top: 8em;
     }
    
-    .form1{
-        position: relative;
-        top: 7em;
-    }
     .footer{
         position: relative;
         top: 10em;
@@ -60,46 +50,43 @@
    .services{
        position:relative;
        top: 10em;
-    }
+   }
    .sidebar-aboutUs{
-		position: relative;
-		top: 10em;
-	}
-	.sidebar-contactUs{
-		position: relative;
-		top: 10em;
-	}
-	.sidebar-boarding{
-		position:relative;
-		top:7em;
-	}
-    .servicesFooter{
-		position: relative;
-		top: 10em;
-		left: -3em;
-	}
-	.sidebar-grooming{
-		position:relative;
-		top: 10em;
-	}
-    .sidebar-home{
+    position: relative;
+    top: 10em;
+}
+
+.sidebar-boarding{
+    position:relative;
+    top:7em;
+}
+   .servicesFooter{
+    position: relative;
+    top: 10em;
+    left: -3em;
+}
+.sidebar-grooming{
+    position:relative;
+    top: 10em;
+}
+   .sidebar-home{
        position: relative;
        top: 5em;
-    }
+   }
    .sidebar-playcare{
-		position: relative;
-		top: 10em;
-	}
-   .sidebar-services{
-		margin: 0px;
-		padding: 0px;
-		height:25em;
-		position: relative;
-		top: 10em;
-	   left:2em;
-	}  
-
+    position: relative;
+    top: 10em;
 }
+   .sidebar-services{
+    margin: 0px;
+    padding: 0px;
+    height:25em;
+    position: relative;
+    top: 10em;
+   left:2em;
+}  
+
+    }
 
 @media all and (min-width:32em){
     .boarding{
@@ -122,12 +109,20 @@
         width: 20em;
         height: 20em;
    }
+   	 .form{
+        position: relative;
+        left: 3em; 
+        
+     }
+	.info-main {
+		position: relative;
+		padding: 1em;
+	}
 
  .sidebar-boarding{
-		position: relative;
-		top: 12em;
-   }
-
+    position: relative;
+    top: 12em;
+}
 }
 
 @media all and (min-width: 44em){
@@ -141,11 +136,7 @@
       top: 12em;
       left: -18em;
     }
-    .sidebar-boarding{
-        position: relative;
-        top: 4em;
-        left: 10em;
-      }
+ 
     .custom-breadcrum{
         position: relative;
         top: 5em;
@@ -155,23 +146,31 @@
         top: 3em;
         width: 20em;
         height: 20em;
-
    }
+   	 .form{
+        position: relative;
+        left: 3em; 
+        
+     }
    .sidebar-home{
 		margin: 0px;
 		padding: 0px;
 		height:28em;
 		position: relative;
 		top: 5em;
-	   left:-0.5em;
-	   
-	}
+		left:-0.5em;
+    }
+   .sidebar-boarding{
+        position: relative;
+        top: 4em;
+        left: 10em;
+    }
    
 }
 @media all and (min-width: 75em){
     .aboutUs{
         position: relative;
-        top: 5em;
+        top: 10em;
     }
     .about-us-pic{
         position:relative;
@@ -180,7 +179,7 @@
     .boarding{
         position: relative;
         top: 10em;
-    }
+            }
     .boarding-pic{
         position: relative;
         top: 8em;
@@ -190,43 +189,58 @@
         position: relative;
         top: 3em;
     }
+    .contact{
+        position: relative;
+        top: -1.5em;
+        left: 5em;
+    }
+	.container-fluid {
+		padding-top: 2em;
+		padding-bottom: 3em;
+	}
     .custom-breadcrum{
         position: relative;
         top: 5em;
+     
+
+    }
+    .custom-breadcrum2{
+        position: relative;
+        top: 5em;
+        left: 10em;
+     
+
     }
     .custom-carousel{
         width: 50em;
         height: 30em;
-    }
+       }
+	
+	 .form{
+        position: relative;
+        left: 3em; 
+        
+     }
+	  .footer {
+		  position:relative;
+          top: 10em;
+          left: -15em;
+	}
+	  
     .grooming{
         position: relative;
         top:5em ;
     }
-
-
-	.form1{
-		position: relative;
-		top: 5em;
-	}
-	.footer-boarding{
-		position: relative;
-		top: 20em;
-		left: -10em;
-	}
-	.footer-contactUs{
-		position: relative;
-		top: 20em;
-		left: -40em;
-	}
-	.footer-services{
-		position: relative;
-		top: 20em;
-		left: -25em;
-	}
-    .grooming-pic{
+	.grooming-pic{
         position: relative;
         top: 5em;
     }
+	.info-main {
+		position: relative;
+		padding: 1em;
+	}
+
+
     .mini-pictures{
         position:relative;
         top: 10em;
@@ -241,9 +255,10 @@
         top: 10em;
         }
     
-    .services{
+    .services-main{
         position: relative;
         top: 5em;
+		
     }
     .sidebar-aboutUs{
         margin: 0px;
@@ -265,21 +280,16 @@
     } 
       
 
-	.sidebar-contactUs{
-		margin: 0px;
-		padding: 0px;
-		height:25em;
-		width: 10em;
-		position: relative;
-		top: -30em;
-	   left:40em;
-	}
-    .servicesFooter{
-        position: relative;
-        top: 30em;
-        left: -15em;
-    }
-    
+.sidebar-contactUs{
+    margin: 0px;
+    padding: 0px;
+    height:25em;
+    width: 10em;
+    position: relative;
+    left: 30em;
+    top: -1em;
+}
+ 
     .sidebar-grooming{
         margin: 0px;
         padding: 0px;
@@ -312,19 +322,11 @@
         padding: 0px;
         height:25em;
         position: relative;
-        top: -40em;
-       left:40em;
+        
     }  
-	
-    .footer{
-	  background-color: lightgrey;	
-      position:relative;
-      top: 5em;
-      padding-bottom: 1em;
-      padding-left: 1em;
-	  padding-right: 1em;
-	  padding-top: 1em;
-    }
+  
+   
+    
     
   
 
