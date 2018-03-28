@@ -9,7 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <style>
+ <style>
 body {background-color: #ffffcc;}
 h2, h3 {color: #eb418b;}
 
@@ -17,6 +17,7 @@ h2, h3 {color: #eb418b;}
 </head>
 <body  data-spy="scroll" data-target=".navbar" data-offset="50">
         
+    
                         
         <hr/>
         <div class="container">
@@ -57,7 +58,7 @@ h2, h3 {color: #eb418b;}
 		<div class="container-fluid col-md-12">
 			<ol class="breadcrumb   custom-breadcrum">
 				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-				<li class="breadcrumb-item"><a href="faculty-login.html">Client Registration</a></li>
+				<li class="breadcrumb-item"><a href="employee-login.html">Employee Login</a></li>
 			</ol>
 		</div>
         
@@ -65,17 +66,13 @@ h2, h3 {color: #eb418b;}
 			<h1>Pampered Pup Playcare  <small> --  Where Pampered Pets Go To Play!</small></h1>
 		</div>
 
+
 		<!--Login Form-->
 		<div class="container-fluid col-md-12 form">
-		<h2>Client Registration</h2><br>
-		<form name="clientRegister" method="POST" action="clientRegistration.php">
-			First Name <input type="text" name="ownerFirstName"><br><br>
-			Last Name <input type="text" name="ownerLastName"><br><br>
-			Address <input type="text" name="ownerAddress"><br><br>
-			Phone Number <input type="text" name="ownerPhoneNum"><br><br>
-			Email <input type="text" name="clientEmail"><br><br>
-			Password <input type="password" name="clientPassword"><br><br>
-			Password Again <input type="password" name="clientPasswordAgain"><br><br>
+		<h2>Employee Log In</h2><br>
+		<form name="employeeLogin" method="POST" action="employeeLogin.php">
+			Email <input type="text" name="empEmail"><br><br>
+			Password <input type="password" name="empPassword"><br><br>
 			
 			<input type="submit" name="submit" value="Login!">
 			
@@ -107,6 +104,6 @@ h2, h3 {color: #eb418b;}
             </footer>
         </div>
 										
-		                                   
+                                     
 </body>
 </html>

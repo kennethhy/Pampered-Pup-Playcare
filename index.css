@@ -99,21 +99,13 @@
       top: 12em;
       left: 1em;
   }
-    .custom-breadcrum{
-        position: relative;
-        top: 2em;
-    }
+  
     .custom-carousel{
         position: relative;
         top: 3em;
         width: 20em;
         height: 20em;
    }
-   	 .form{
-        position: relative;
-        left: 3em; 
-        
-     }
 	.info-main {
 		position: relative;
 		padding: 1em;
@@ -136,38 +128,59 @@
       top: 12em;
       left: -18em;
     }
- 
-    .custom-breadcrum{
+	body {
+		background-color: #ffffae;
+	}
+    .contact{
         position: relative;
-        top: 5em;
+        top: -1em;
+        left:5em;
     }
+  
     .custom-carousel{
         position: relative;
         top: 3em;
         width: 20em;
         height: 20em;
+
    }
-   	 .form{
-        position: relative;
-        left: 3em; 
-        
-     }
-   .sidebar-home{
-		margin: 0px;
-		padding: 0px;
-		height:28em;
-		position: relative;
-		top: 5em;
-		left:-0.5em;
-    }
+   .form1{
+       position: relative;
+       top: 2em;
+   }
    .sidebar-boarding{
-        position: relative;
-        top: 4em;
-        left: 10em;
-    }
+    position: relative;
+    top: 4em;
+    left: 10em;
+  }
+   .sidebar-contactUs{
+    margin: 0px;
+    padding: 0px;
+    height:25em;
+    width: 10em;
+    position: relative;
+    left: 10em;
+   
+}
+ 
+   .sidebar-home{
+    margin: 0px;
+    padding: 0px;
+    height:28em;
+    position: relative;
+    top: 5em;
+   left:-0.5em;
+   
+}
+
+ 
    
 }
 @media all and (min-width: 75em){
+    .accord{
+        position: relative;
+        top: 2em;
+    }
     .aboutUs{
         position: relative;
         top: 10em;
@@ -179,87 +192,136 @@
     .boarding{
         position: relative;
         top: 10em;
-            }
+    }
     .boarding-pic{
         position: relative;
         top: 8em;
         left: 1em;
     }
-    .breadcrum-services{
-        position: relative;
-        top: 3em;
+	body {
+		background-color: #ffffae;
+	}		
+    .breadcrum-services
+		position: relative
+		top: 3em;
     }
+	
     .contact{
         position: relative;
         top: -1.5em;
         left: 5em;
     }
-	.container-fluid {
-		padding-top: 2em;
-		padding-bottom: 3em;
+    .container2{
+        position: relative;
+        padding: 1em;
+		
+    }
+	.custom-breadcrum{ 
+		position: relative;
+		top: 2em;
 	}
-    .custom-breadcrum{
-        position: relative;
-        top: 5em;
-     
-
-    }
-    .custom-breadcrum2{
-        position: relative;
-        top: 5em;
-        left: 10em;
-     
-
-    }
     .custom-carousel{
         width: 50em;
         height: 30em;
        }
+	   
+	.footer {
+		background-color: #94D466;
+        position: relative;
+        padding: 2em;
+		
+    }
+	   
 	
 	 .form{
         position: relative;
-        left: 3em; 
-        
+        left: 1em; 
+        top: 1em;
      }
-	  .footer {
-		  position:relative;
-          top: 10em;
-          left: -15em;
-	}
-	  
+	 
     .grooming{
         position: relative;
         top:5em ;
     }
-	.grooming-pic{
+    .grooming-pic{
         position: relative;
         top: 5em;
     }
+	
+	h2 {
+		color: #94D466;
+	}
 	.info-main {
 		position: relative;
 		padding: 1em;
-	}
+    }
+    #miniBoarding{
+        background-image: url('https://i.imgur.com/fviRnTp.jpg');
+        background-repeat: no-repeat;
+        width:100%;
+        height: 100%;
 
+    }
+    #miniBoarding:hover{
+       background-image: url('https://i.imgur.com/No6M8AZ.jpg');
+       background-repeat: no-repeat;
+       width:100%;
+       height: 100%;
+   }
+     #miniGrooming{
+         background-image: url('https://i.imgur.com/LXDTpon.jpg');
+         background-repeat: no-repeat;
+         width:100%;
+         height: 100%;
 
+     }
+     #miniGrooming:hover{
+        background-image: url('https://i.imgur.com/mwYfsRy.jpg');
+        background-repeat: no-repeat;
+        width:100%;
+        height: 100%;
+    }
+   
+     #miniPlaycare{
+        background-image: url('https://i.imgur.com/6gzuLmZ.jpg');
+         background-repeat: no-repeat;
+         width:100%;
+        height: 100%;
+     } #miniPlaycare:hover {
+        background-image: url('https://i.imgur.com/ykSeHqB.jpg');
+        background-repeat: no-repeat;
+        width:100%;
+        height: 100%;
+     }
+     .transparent{
+         opacity: 0.0;
+     }
+
+     
+    
     .mini-pictures{
         position:relative;
         top: 10em;
+		bottom: 1em;
     }
- 
+   
+      
     .nav-link{
         color: black;
         
+    }
+    .panel {
+        padding: 0 18px;
+        background-color: gray;
+        display: none;
+        overflow: hidden;
     }
     .playcare{
         position: relative;
         top: 10em;
         }
     
-    .services-main{
-        position: relative;
-        top: 5em;
-		
-    }
+    
     .sidebar-aboutUs{
         margin: 0px;
         padding: 0px;
@@ -300,6 +362,7 @@
        left:40em;
     }
     .sidebar-home{
+		
         margin: 0px;
         padding: 0px;
         height:28em;
@@ -322,9 +385,16 @@
         padding: 0px;
         height:25em;
         position: relative;
+        top: 5em;
         
     }  
-  
+    .tagLine {
+		background-color: #94D466;
+		text: center;
+		font-style:  italic;
+		font-family: font-family: Arial, Helvetica, sans-serif;
+		padding: 1em;
+	}
    
     
     
