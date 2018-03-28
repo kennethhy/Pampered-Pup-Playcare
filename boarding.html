@@ -9,24 +9,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-     
+ <style>
+body {background-color: #ffffcc;}
+h2, h3 {color: #eb418b;}
+
+</style>       
 </head>
-<body  data-spy="scroll" data-target=".navbar" data-offset="50">
+<body  data-spy="scroll" data-target=".navbar" data-offset="50" onload="hours()">
         <div class="container">
-                <div class="row">
-                        
-                
-                            <div class="body-wrap">
-                              <hr/>
-                                        <div class="container">
-                                         
-                                            <div class="container-fluid">
-                                            
-                            
-                                                
-                                              <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> 
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> 
                                                 <div class="navbar-header">
-                                                    <a class="navbar-brand" href="#"><img src="logo6.png" alt="Logo" class="img-fluid rounded"></a>
+                                                    <a class="navbar-brand" href="#"><img src="logoPaw2.png" alt="Logo" class="img-fluid rounded"></a>
                                                   </div>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -85,26 +78,25 @@
 												<h1>Pampered Pup Playcare  <small> --  Where Pampered Pets Go To Play!</small></h1>
 											</div>											
                                            
-                                          <div class="col-md-4 boarding-pic text-center">
-                                            <a href=""><img src="boarding1.jpg" alt="Feeding two dogs" class="img-fluid rounded"></a>
+                                          <div class="col-md-8 boarding-pic text-center">
+                                            <a href=""><img src="boarding1.jpg" alt="Feeding two dogs" width="60%" image="center-left" class="img-fluid rounded"></a>
                                             </div> 
                                           <div class="col-md-6 boarding">
-                                              <h1>Boarding</h1>
+                                              <h2>Boarding</h2>
                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula egestas. Cras volutpat quam neque, finibus molestie ex elementum a. Pellentesque elementum nunc id mi elementum ullamcorper. Fusce nec nibh eget turpis malesuada dapibus placerat sit amet odio. Aliquam vel ipsum sit amet erat vulputate maximus. In eget justo at quam finibus efficitur. Vestibulum sit amet dolor non turpis bibendum porta sed eget elit. Sed convallis orci eu maximus tincidunt. Nunc eget nisl et orci fermentum scelerisque sodales at nunc. Praesent nec arcu a lorem pharetra semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc venenatis ligula a neque iaculis condimentum.</p>
                                               </div>
                                                                                               
-                                            <div class="col-md-8 sidebar-boarding">
-                                                <h3>Get Directions</h3>
-                                                    <a href=""><h3 style="color:black;">Make Appointment</h3></a>
+                                            <div class="col-md-4 sidebar-boarding">
+                                              
+                                                    <a href="petSignup.html" class="btn btn-success" role="button"><h3>Make Appointment</h3></a><br /><br />
                                                     <h3>Hours</h3>
-                                                    <p>M - F 6:45 a.m. to 7:00 p.m. </p>
-                                                    <p>Saturday and Sunday 7 a.m. - 7 p.m.</p>
+                                                    <p id="hours"></p>
                                                   
                                               </div>
                                               <div class="col-md-12">
                           
                         
-                                                <footer class=" row container-fluid footer text-center ">
+                                                <footer class=" row footer ">
                                                 <div class="col-md-4 col-lg-4">
                                                    <h5>Contact Us</h5>
                                                  <p>Street Address<br>
@@ -130,6 +122,30 @@
                                               </div>
                                               </div>
                                               </div>
-
+                                              <script>
+                                    
+                                                function hours(){
+                                                   var current1 = new Date();
+                                               var start1 = new Date();
+                                               start1.setHours(06,45); // 6:45 am
+                                               var end1 = new Date();
+                                               end1.setHours(19); // 7:00 pm
+                                              
+                                              if(current1 >= start1 && current1 < end1){
+                                                
+                                                document.getElementById("hours").innerHTML= "We are open now from  7:00am :  until 7:00pm \n" + current1 ;
+                                                
+                                             } 
+                                             else{
+                                              
+                                               document.getElementById("hours").innerHTML= "We are closed we open at 6:45 am : until 7:00pm \n"+ current1 ;
+                                               
+                                             }
+                                             
+                                             }
+                                             
+                                               
+                                               
+                                               </script>      
                                             </body>
                                       </html>

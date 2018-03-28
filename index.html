@@ -9,10 +9,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <style>
+body {background-color: #ffffcc;}
+h2, h3 {color: #eb418b;}
+
+</style>  
 </head>
-<body  data-spy="scroll" data-target=".navbar" data-offset="50">
+<body  data-spy="scroll" data-target=".navbar" data-offset="50" onload="hours()">
         <div class="container-fluid">
-                         <hr />
+                         
                                     
                                          
                                     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> 
@@ -72,8 +77,8 @@
 												<h1>Pampered Pup Playcare  <small> --  Where Pampered Pets Go To Play!</small></h1>
 											</div>
 											
-										<div class="col-md-12 container-fluid mainbody">
-                                            <div id="myCarousel" class="carousel slide custom-carousel col-md-8" data-ride="carousel">
+										<div class="col-sm-12 col-md-12 col-lg-12  mainbody">
+                                            <div id="myCarousel" class="carousel slide custom-carousel col-sm-8 col-md-8 col-lg-8 " data-ride="carousel">
 
                                               <!-- Indicators -->
                                               <ul class="carousel-indicators">
@@ -114,20 +119,20 @@
 
                                         <!--SideBar-->
 											 											 											                     
-                                            <div class="col-md-4 col-sm-12 sidebar-home"> 
-                                                <h3>Get Directions</h3>
+                                            <div class="col-md-4 col-sm-4 sidebar-home"> 
+                                                
                                                   
-                                                    <a href=""><h3 style="color: #eb418b;">Make Appointment</h3></a>
+                                                   <!--<a href="#"><h3>Make Appointment</h3></a>-->
+													<a href="petSignup.html" class="btn btn-success" role="button"><h3>Make Appointment</h3></a><br /><br />
                                                     <h3>Hours</h3>
-                                                    <p>M - F 6:45 a.m. to 7:00 p.m. </p>
-                                                    <p>Saturday and Sunday 7 a.m. - 7 p.m.</p>
+                                                    <p id="hours"></p>
                                             </div> 
                                                  
                                             
-                                        </div>
+                                    </div>
 										<!--Information text about Pampered Pup-->
 										    <div class="col-md-12 mainInfo">
-												<h3 style="color: #eb418b; ">Pampered Pup Playcare </h3>
+												<h3>Pampered Pup Playcare </h3>
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. <b>Lorem</b> Praesent libero. Sed cursus ante <i>Lorem</i> dapibus diam. Sed nisi. Nulla <i>Lorem</i> quis <b>Praesent</b> sem at nibh elementum <i>Sed</i> imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus <b>sagittis</b> sed <b>nibh</b> augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per <b>nulla.</b> conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <i>lacinia</i> libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula <i>lacinia</i> vel nunc egestas <b>dolor.</b> porttitor. Morbi lectus risus, <i>sem</i> iaculis <b>sem.</b> vel, suscipit quis, <b>vel</b> luctu.</p>
 											</div>
 
@@ -137,7 +142,7 @@
                                             <div class="col-md-12 footer">
                           
                         
-                                              <footer class=" row container-fluid text-center">
+                                              <footer class=" row container-fluid">
                                                <div class="col-md-4 col-lg-4">
                                                    <h5>Contact Us</h5>
                                                  <p>Street Address<br>
@@ -163,7 +168,31 @@
                
         </div>
                                       
-                                      
+        <script>
+                                    
+          function hours(){
+             var current1 = new Date();
+         var start1 = new Date();
+         start1.setHours(06,45); // 6:45 am
+         var end1 = new Date();
+         end1.setHours(19); // 7:00 pm
+        
+        if(current1 >= start1 && current1 < end1){
+          
+          document.getElementById("hours").innerHTML= "We are open now from  7:00am :  until 7:00pm \n" + current1 ;
+          
+       } 
+       else{
+        
+         document.getElementById("hours").innerHTML= "We are closed. We open at 6:45 am : until 7:00pm \n"+ current1 ;
+         
+       }
+       
+       }
+       
+         
+         
+         </script>                                  
     </body> 
 </html>
                                       

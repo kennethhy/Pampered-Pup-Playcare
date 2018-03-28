@@ -9,25 +9,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-     
+  <style>
+body {background-color: #ffffcc;}
+h2, h3 {color: #eb418b;}
+
+</style>    
 </head>
-<body  data-spy="scroll" data-target=".navbar" data-offset="50">
+<body  data-spy="scroll" data-target=".navbar" data-offset="50" onload="hours()">
         <div class="container-fluid">
-                <div class="row">
-                        
-                
-                            <div class="body-wrap">
-                              <hr/>
-                                       
-                                         
-                                            
-                                            
-                            
-                                            
-                                                  
+               
                               <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> 
                                 <div class="navbar-header">
-                                    <a class="navbar-brand" href="#"><img src="logo6.png" alt="Logo" class="img-fluid rounded"></a>
+                                    <a class="navbar-brand" href="#"><img src="logoPaw2.png" alt="Logo" class="img-fluid rounded"></a>
                                   </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -87,7 +80,7 @@
 										
 										                        <div class="col-md-12">
                                       
-                                            <div class="row col-lg-6 form1">
+                                            <div class="row col-lg-6 form">
                                                 <h2 class="contact">Contact Us</h2>
                                               <form action="/action_page.php">
                                                 <div class="form-group">
@@ -118,12 +111,11 @@
                                               </form>
                                           
                                               <div class="row col-md-6 col-lg-4 sidebar-contactUs">
-                                                <h3>Get Directions</h3>
+                                              
                                                   
-                                                    <a href=""><h3 style="color:black;">Make Appointment</h3></a>
+                                                    <a href="petSignup.html" class="btn btn-success" role="button"><h3>Make Appointment</h3></a><br><br>
                                                     <h3>Hours</h3>
-                                                    <p>M - F 6:45 a.m. to 7:00 p.m. </p>
-                                                    <p>Saturday and Sunday 7 a.m. - 7 p.m.</p>
+                                                    <p id="hours"></p>
                                                    
                                             
                                             </div>
@@ -156,6 +148,30 @@
                                           </div>
                                         </div>
                                      </div>
-                                            
+                                     <script>
+                                    
+                                      function hours(){
+                                         var current1 = new Date();
+                                     var start1 = new Date();
+                                     start1.setHours(06,45); // 6:45 am
+                                     var end1 = new Date();
+                                     end1.setHours(19); // 7:00 pm
+                                    
+                                    if(current1 >= start1 && current1 < end1){
+                                      
+                                       document.getElementById("hours").innerHTML= "We are open now until 7:00pm :  until 7:00pm \n" + current1 ;
+                                      
+                                   } 
+                                   else{
+                                    
+                                     document.getElementById("hours").innerHTML= "We are closed we open at 6:45 am : until 7:00pm \n"+ current1 ;
+                                     
+                                   }
+                                   
+                                   }
+                                   
+                                     
+                                     
+                                     </script>        
                                         </body>
                                       </html>

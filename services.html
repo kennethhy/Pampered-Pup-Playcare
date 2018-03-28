@@ -11,43 +11,45 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
 <style>
 .accordion {
-    background-color: #ffffae;
+    background-color: #9fd85a;
     color: #444;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
+    border: 5px;
     text-align: left;
-    outline: none;
+    outline: 3px;
     font-size: 15px;
     transition: 0.4s;
 }
 
 .active, .accordion:hover {
-    background-color: #ccc; 
+    background-color: #b7e283; 
 }
 
 .panel {
     padding: 0 18px;
     display: none;
-    background-color: white;
+    background-color: #ffffcc;;
     overflow: hidden;
+	border: 5px;
+	border-color: black;
 }
 </style>
- 
+ <style>
+body {background-color: #ffffcc;}
+h2, h3 {color: #eb418b;}
+
+</style>   
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="hours()">
                                       
         <div class="container-fluid">
-                <div class="row">
-                                
-                        
-                <div class="body-wrap">
-                        <hr/>					    
+                
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> 
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="logo6.png" alt="Logo" class="img-fluid rounded"></a>
+                    <a class="navbar-brand" href="#"><img src="logoPaw2.png" alt="Logo" class="img-fluid rounded"></a>
                   </div>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <span class="navbar-toggler-icon"></span>
@@ -90,7 +92,7 @@
               </ul>
              </div>
             </nav>
-		<div class="container2">              
+		             
 				<div class="col-md-12">
 									 
                     <ul class="breadcrumb  custom-breadcrum">
@@ -130,11 +132,10 @@
 
 									   
 				<div class="col-sm-4 col-lg-4 sidebar-services">
-						<h3>Get Directions</h3>
-						<a href=""><h3 style="color:black;">Make Appointment</h3></a>
+					
+						<a href="petSignup.html" class="btn btn-success" role="button"><h3>Make Appointment</h3></a><br /><br />
 						<h3>Hours</h3>
-						<p>M - F 6:45 a.m. to 7:00 p.m. </p>
-						<p>Saturday and Sunday 7 a.m. - 7 p.m.</p>
+						<p id="hours"></p>
 						<p></p>
 
 					</div>	
@@ -142,32 +143,46 @@
 			
 							<!--footer-->	
 										
-                                            <div class="col-md-12 footer">
+              <div class="col-md-12">
                           
                         
-                                              <footer class=" row container-fluid text-center">
-                                               <div class="col-md-4 col-lg-4">
-                                                   <h5>Contact Us</h5>
-                                                 <p>Street Address<br>
-                                                 City, State, Zip<br>
-                                                 Phone<br>
-                                                 Email</p>
-                                               </div>
-                                               <div class="col-md-4 col-lg-4">
-                                                   <h5>Around the Web</h5>
-                                                 <p>Facebook</p>
-                                               </div>
-											   <div class="col-md-4 col-lg-4">
-                                                   <h5>Map</h5>
-                                                 
-                                               </div>
-                                               <div class="col-sm-12 col-lg-12">
-                                                 <a href="">Pampered Pup Playcare &copy; 2018</a>
-                                               </div>	
-                                             </footer>
-                                             </div>
+                  <footer class=" row footer ">
+                  <div class="col-md-4 col-lg-4">
+                     <h5>Contact Us</h5>
+                   <p>Street Address<br>
+                   City, State, Zip<br>
+                   Phone<br>
+                   Email</p>
+                 </div>
+                 <div class="col-md-4 col-lg-4">
+                     <h5>Around the Web</h5>
+                   <p>Facebook</p>
+                 </div>
+<div class="col-md-4 col-lg-4">
+                     <h5>Map</h5>
+                   
 			</div>
 <script>
+    function hours(){
+             var current1 = new Date();
+         var start1 = new Date();
+         start1.setHours(06,45); // 6:45 am
+         var end1 = new Date();
+         end1.setHours(19); // 7:00 pm
+        
+        if(current1 >= start1 && current1 < end1){
+          
+          document.getElementById("hours").innerHTML= "We are open now from  7:00am :  until 7:00pm \n" + current1 ;
+          
+       } 
+       else{
+        
+         document.getElementById("hours").innerHTML= "We are closed. We open at 6:45 am : until 7:00pm \n"+ current1 ;
+         
+       }
+       
+       }
+       
 var acc = document.getElementsByClassName("accordion");
 var i;
 
